@@ -1,0 +1,24 @@
+<!--<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${'hello' + name + '' + age}"></h1>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--/*@thymesVar id="title" type=""*/-->
+    <!--/*@thymesVar id="title" type=""*/-->
+    <title th:text="${title}">Hello Spring</title>
+</head>
+<body>
+<p th:text="${'My name is '+name+'My age is '+age}"> </p>
+<p th:text="${'My age is '+age}"> </p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<div class="x_content">
+    <div class="table-responsive">
+        <table class="table table-striped jambo_table bulk_action">
+            <thead>
+            <tr class="headings">
+
+                <th class="column-title">Car ID</th>
+                <th class="column-title">Car name</th>
+                <th class="column-title">Car number</th>
+                <th></th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="car : ${cars}">
+
+                <td th:text="${car.id}"></td>
+                <td th:text="${car.name}"></td>
+                <td th:text="${car.number}"></td>
+
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</main>
+</body>
+</html>

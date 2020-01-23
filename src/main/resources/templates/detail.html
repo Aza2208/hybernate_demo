@@ -1,0 +1,38 @@
+<!--<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+<h1 th:text="${message}">Student details:</h1>
+<p><b>Id:</b></p>
+<p th:text="${student.getId()}"></p>
+<p><b>Name:</b></p>
+<p th:text="${student.getFirstName() + ' ' + student.getLastName()}"></p>
+<p><b>Age:</b></p>
+<p th:text="${student.getAge()}"></p>
+<a href="/">Return to students list</a>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!--/*@thymesVar id="title" type=""*/-->
+    <!--/*@thymesVar id="title" type=""*/-->
+    <title th:text="${title}">Hello Spring</title>
+</head>
+<body>
+<!--/*@thymesVar id="message" type=""*/-->
+<h1 th:text="${message}">Students detail:</h1>
+<p><b>Id:</b></p>
+<p th:text="${student.getId()}"> </p>
+<p><b>Name:</b></p>
+<p th:text="${student.getFirstName()+' '+student.getLastName()}"> </p>
+<p><b>Age:</b></p>
+<p th:text="${student.getAge()}"> </p>
+<a href="/" >Return to students list</a>
+</body>
+</html>
